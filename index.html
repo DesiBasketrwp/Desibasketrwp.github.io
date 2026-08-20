@@ -307,6 +307,25 @@
     }
 
 }
+        /* =========================
+   FULL WIDTH BRAND VIDEO
+========================= */
+
+.brand-video-section {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.brand-video-section video {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+        
     </style>
 </head>
 <body>
@@ -319,6 +338,14 @@
         <h1>Desi Basket</h1>
         <p class="tagline">Pure Desi Essentials for Modern Families</p>
 
+        <!-- BRAND VIDEO -->
+<section class="brand-video-section">
+    <video autoplay muted loop playsinline>
+        <source src="brand-video.mp4" type="video/mp4">
+        Your browser does not support the video.
+    </video>
+</section>
+        
         <!-- OUR PRODUCTS -->
 <section class="products-section">
 
