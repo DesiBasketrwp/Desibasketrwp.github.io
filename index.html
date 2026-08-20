@@ -124,6 +124,53 @@
             font-size: 12px;
             color: #aaa;
         }
+        .action-section,
+.payment-section {
+    margin-top: 28px;
+}
+
+.section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--teal);
+    margin-bottom: 12px;
+}
+
+.google-review {
+    background: #ffffff;
+    color: var(--dark);
+    border: 1.5px solid #e2e2e2;
+}
+
+.google-review i {
+    color: #f4b400;
+}
+
+.google-review:hover {
+    border-color: var(--orange);
+    background: #fffaf5;
+}
+
+.qr-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.qr-card img {
+    width: 190px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.qr-card p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
     </style>
 </head>
 <body>
@@ -157,6 +204,35 @@
                 <i class="fab fa-whatsapp"></i> Order Now
             </a>
         </div>
+
+        <!-- GOOGLE REVIEW -->
+<div class="action-section">
+    <p class="section-title">Love Desi Basket?</p>
+
+    <a href="https://share.google/AeT1sAgNtGeCy7a0M"
+       class="btn google-review"
+       target="_blank">
+
+        <i class="fa-solid fa-star"></i>
+        Leave a Review on Google
+
+    </a>
+</div>
+
+<!-- ONLINE PAYMENT -->
+<div class="payment-section">
+    <p class="section-title">Pay Online</p>
+
+    <div class="qr-card">
+
+        <img src="payment-qr.png"
+             alt="Desi Basket Online Payment QR Code">
+
+        <p>Scan the QR code to pay online</p>
+
+    </div>
+</div>
+        
 
         <footer>
             © 2026 Desi Basket. All rights reserved.
