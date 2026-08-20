@@ -171,6 +171,142 @@
     color: #666;
     margin: 0;
 }
+        /* =========================
+   OUR PRODUCTS
+========================= */
+
+.products-section {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.products-section h2 {
+    color: var(--teal);
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.products-subtitle {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+/* PRODUCT GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    padding: 14px;
+    text-decoration: none;
+    color: var(--dark);
+    text-align: left;
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    width: 42%;
+    min-width: 120px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    border-radius: 13px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product-details {
+    flex: 1;
+    padding: 8px 5px 8px 18px;
+}
+
+.product-details h3 {
+    color: var(--teal);
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.product-details h3 span {
+    font-size: 14px;
+}
+
+.product-details p {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+/* PRICE BUTTON */
+
+.price-button {
+    display: inline-block;
+
+    background: #f0ead1;
+    color: var(--teal);
+
+    padding: 10px 16px;
+    border-radius: 12px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: transform 0.2s ease,
+                background 0.2s ease;
+}
+
+.product-card:hover .price-button {
+    transform: scale(1.05);
+    background: #e8dfc0;
+}
+
+
+/* DESKTOP VIEW */
+
+@media (min-width: 700px) {
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
     </style>
 </head>
 <body>
@@ -183,6 +319,102 @@
         <h1>Desi Basket</h1>
         <p class="tagline">Pure Desi Essentials for Modern Families</p>
 
+        <!-- OUR PRODUCTS -->
+<section class="products-section">
+
+    <h2>Our Products</h2>
+    <p class="products-subtitle">
+        Fresh, authentic and delivered to your doorstep.
+    </p>
+
+    <div class="products-grid">
+
+        <!-- MILK -->
+        <a href="https://wa.me/923240735110?text=Hello%20Desi%20Basket!%20I%20would%20like%20to%20order%201%20Liter%20Fresh%20Milk."
+           class="product-card"
+           target="_blank">
+
+            <div class="product-image">
+                <img src="milk.png" alt="Desi Basket Fresh Milk">
+            </div>
+
+            <div class="product-details">
+                <h3>Fresh Milk</h3>
+                <p>Farm Fresh • 1 Liter</p>
+
+                <div class="price-button">
+                    Rs. 220
+                </div>
+            </div>
+
+        </a>
+
+
+        <!-- DESI GHEE -->
+        <a href="https://wa.me/923240735110?text=Hello%20Desi%20Basket!%20I%20would%20like%20to%20order%20Desi%20Ghee."
+           class="product-card"
+           target="_blank">
+
+            <div class="product-image">
+                <img src="ghee.png" alt="Desi Basket Desi Ghee">
+            </div>
+
+            <div class="product-details">
+                <h3>Desi Ghee</h3>
+                <p>100% Pure</p>
+
+                <div class="price-button">
+                    Rs. 4,000 / kg
+                </div>
+            </div>
+
+        </a>
+
+
+        <!-- BUTTER -->
+        <a href="https://wa.me/923240735110?text=Hello%20Desi%20Basket!%20I%20would%20like%20to%20order%20Butter%20(Makhan)."
+           class="product-card"
+           target="_blank">
+
+            <div class="product-image">
+                <img src="butter.png" alt="Desi Basket Butter">
+            </div>
+
+            <div class="product-details">
+                <h3>Butter <span>(Makhan)</span></h3>
+                <p>Rich & Smooth</p>
+
+                <div class="price-button">
+                    Rs. 1,800 / kg
+                </div>
+            </div>
+
+        </a>
+
+
+        <!-- YOGURT -->
+        <a href="https://wa.me/923240735110?text=Hello%20Desi%20Basket!%20I%20would%20like%20to%20order%20Plain%20Yogurt."
+           class="product-card"
+           target="_blank">
+
+            <div class="product-image">
+                <img src="yogurt.png" alt="Desi Basket Plain Yogurt">
+            </div>
+
+            <div class="product-details">
+                <h3>Plain Yogurt</h3>
+                <p>Thick & Creamy</p>
+
+                <div class="price-button">
+                    Rs. 260 / kg
+                </div>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
         <!-- FOLLOW TEXT -->
         <p class="follow-text">Follow for updates</p>
 
