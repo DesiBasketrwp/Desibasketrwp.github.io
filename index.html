@@ -302,7 +302,24 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
 
+.video-banner iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 177.78vh;
+    height: 100%;
+    min-width: 100%;
+    min-height: 56.25vw;
+    transform: translate(-50%, -50%);
+    border: none;
+}
         
     </style>
 </head>
@@ -315,6 +332,17 @@
         <!-- BRAND NAME -->
         <h1>Desi Basket</h1>
         <p class="tagline">Pure Desi Essentials for Modern Families</p>
+
+        <section class="video-banner">
+    <iframe
+        src="https://www.youtube.com/embed/2fFD5pTl9Ic?autoplay=1&mute=1&loop=1&playlist=2fFD5pTl9Ic&controls=0&playsinline=1"
+        title="Desi Basket Brand Video"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen>
+    </iframe>
+</section>
+        
         
         <!-- OUR PRODUCTS -->
 <section class="products-section">
