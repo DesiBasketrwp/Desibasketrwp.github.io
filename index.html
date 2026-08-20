@@ -306,8 +306,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-}
-      .brand-video-section {
+    .brand-video-section {
     width: calc(100% + 60px);
     margin-left: -30px;
     margin-top: 25px;
@@ -334,20 +333,13 @@
         <h1>Desi Basket</h1>
         <p class="tagline">Pure Desi Essentials for Modern Families</p>
 
-     <!-- BRAND VIDEO -->
+  <!-- BRAND VIDEO -->
 <section class="brand-video-section">
-    <video autoplay muted loop playsinline preload="auto" controls>
-    <source src="./brand-video.mp4" type="video/mp4">
-</video>
+    <video autoplay muted loop playsinline preload="auto">
+        <source src="./brand-video.mp4" type="video/mp4">
+    </video>
 </section>
 
-<script>
-    const video = document.getElementById("brandVideo");
-
-    video.play().catch(function(error) {
-        console.log("Autoplay was blocked:", error);
-    });
-</script>
         
         <!-- OUR PRODUCTS -->
 <section class="products-section">
